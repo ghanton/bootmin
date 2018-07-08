@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootmin - Sliders</title>
+        <!-- Bootmin stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/themify/themify-icons.css" />
+        <link rel="stylesheet" href="css/animate/animate.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-slider/slider.css" />
+		<link rel="stylesheet" href="css/ion-rangeSlider/ion.rangeSlider.css" />
+		<link rel="stylesheet" href="css/ion-rangeSlider/ion.rangeSlider.skinFlat.css" />
+        <link rel="stylesheet" href="css/style.css" />
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+        <!-- Header -->
+        <header class="navbar-fixed-top">
+			<a href="index.html" class="logo"><i class="fa fa-flask"></i> <span>Bootmin</span></a>
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="navbar-btn sidebar-toggle">
+                    <i class="fa fa fa-bars"></i>
+                </a>
+				<div class="navbar-header">
+                    <form role="search" class="navbar-form hidden-md hidden-sm hidden-xs" method="post" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search in bootmin..."/>
+                            <span class="input-group-btn">
+                                <button type="submit" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+				</div>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+						<li class="text hidden-md hidden-sm hidden-xs">
+							<span>Welcome to Bootmin Admin Theme</span>
+						</li>
+                        <li class="dropdown dropdown-notifications">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-bell"></i><span class="label label-warning">5</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                  <ul>
+                                        <li><a href="#"><i class="fa fa-users"></i> New user registered</a></li>
+                                        <li><a href="#"><i class="fa fa-heart"></i> Jane liked your post</a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i> You got a message from Jean</a></li>
+										<li><a href="#"><i class="fa fa-info"></i> Privacy settings changed</a></li>
+										<li><a href="#"><i class="fa fa-comments"></i> New comments waiting approval</a></li>
+                                        <li><a href="#"><i class="fa fa-users"></i> New user registered</a></li>
+                                        <li><a href="#"><i class="fa fa-heart"></i> Jane liked your post</a></li>
+                                        <li><a href="#"><i class="fa fa-envelope"></i> You got a message from Jean</a></li>
+										<li><a href="#"><i class="fa fa-info"></i> Privacy settings changed</a></li>
+										<li><a href="#"><i class="fa fa-comments"></i> New comments waiting approval</a></li>  
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#"><i class="fa fa-bell"></i> View all notifications</a></li>
+                            </ul>
+                        </li>
+						
+                        <li class="dropdown dropdown-messages">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-email"></i><span class="label label-success">6</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="img/avatar.jpg" class="img-rounded" alt="image"/></div>
+                                                <h4>Jill Doe<small><i class="fa fa-clock-o"></i> 1 mins</small></h4>
+                                                <p>Can we meet somewhere?</p>
+                                            </a>
+                                        </li>
+										
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="img/avatar.jpg" class="img-rounded" alt="image"/></div>
+                                                <h4>John Doe<small><i class="fa fa-clock-o"></i> 2 mins</small></h4>
+                                                <p>Please send me a new email.</p>
+                                            </a>
+                                        </li>
+										
+										<li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="img/avatar.jpg" class="img-rounded" alt="image"/></div>
+                                                <h4>Jeremy Doe<small><i class="fa fa-clock-o"></i> 30 mins</small></h4>
+                                                <p>Don't forget to subscribe to...</p>
+                                            </a>
+                                        </li>
+										
+										<li>
+                                            <a href="#">
+                                                <div class="pull-left"><img src="img/avatar.jpg" class="img-rounded" alt="image"/></div>
+                                                <h4>Jean Doe<small><i class="fa fa-clock-o"></i> 2 hours</small></h4>
+                                                <p>I sent you a mail about me.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="inbox.html"><i class="fa fa-envelope"></i> View all messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-notifications">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Admin Settings">
+                                <i class="ti-settings"></i>
+                            </a>
+                            <ul class="dropdown-menu navbar-drop-header">
+                                <li>
+                                    <div class="col-md-12"><h4>Settings &amp; Tools</h4></div>
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-settings navbar-icon"></div>
+                                        <div><a href="#">Settings</a></div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-wallet navbar-icon"></div>
+                                        <div><a href="#">Billing</a></div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-server navbar-icon"></div>
+                                        <div><a href="#">Database</a></div>
+                                    </div> 
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-lock navbar-icon"></div>
+                                        <div><a href="#">Security</a></div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-pulse navbar-icon"></div>
+                                        <div><a href="#">Activity</a></div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6 text-center navbar-buttons">
+                                        <div class="ti-help-alt navbar-icon"></div>
+                                        <div><a href="#">Help</a></div>
+                                    </div>                                                                    
+                                </li>
+                            </ul>
+                        </li>                          
+                        <li class="button">
+                            <a href="login.html"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                </div>
+				<span class="corner" style="background: linear-gradient(-45deg, transparent 0%, transparent 50%, rgb(27, 129, 203) 51%, rgb(27, 129, 203) 83%, rgb(27, 129, 203) 100%) repeat scroll 0% 0% transparent; "></span>
+            </nav>
+        </header>
+		<!-- /.header -->
+		 
+		<!-- wrapper -->
+        <div class="wrapper">
+            <div class="leftside">
+                <div class="sidebar">
+                    <div class="user-box">
+                        <div class="avatar">
+                            <img src="img/avatar.jpg" alt="Avatar" />
+							<i class="fa fa-circle text-success"></i>
+                        </div>
+                        <div class="details dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">John Doe <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+                                <li class="active"><a href="#">Profile</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Mailbox</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                            <span class="position">Superadmin</span>
+                        </div>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+							  </a>
+                        </li>
+                        <li>
+                            <a href="inbox.html">
+                                <i class="fa fa-envelope"></i> <span>Inbox</span>
+                                <small class="label label-warning pull-right">10</small>
+                            </a>
+                        </li>
+                        <li class="dropdown active open">
+                            <a href="#">
+                                <i class="fa fa-briefcase"></i>
+                                <span>UI Elements</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="basic-elements.html"><i class="fa fa-angle-right"></i>Basic Elements</a></li>
+                                <li><a href="grids.html"><i class="fa fa-angle-right"></i>Grids</a></li>
+                                <li><a href="typography.html"><i class="fa fa-angle-right"></i>Typography</a></li>
+                                <li><a href="buttons.html"><i class="fa fa-angle-right"></i>Buttons</a></li>
+                                <li class="active"><a href="sliders.html"><i class="fa fa-angle-right"></i>Sliders</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span>Icons</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="icons-themify.html"><i class="fa fa-angle-right"></i>Themify</a></li>
+                                <li><a href="icons-stroke-7.html"><i class="fa fa-angle-right"></i>Stroke 7</a></li>                 
+                                <li><a href="icons-font-awesome.html"><i class="fa fa-angle-right"></i>Font Awesome</a></li>
+                                <li><a href="icons-glyphicons.html"><i class="fa fa-angle-right"></i>Glyphicons</a></li>                                                                
+                            </ul>
+                        </li>                        
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-pencil"></i> <span>Forms</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="form-elements.html"><i class="fa fa-angle-right"></i>Form Elements</a></li>
+                                <li><a href="form-validation.html"><i class="fa fa-angle-right"></i>Form Validation</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-table"></i> <span>Tables</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="basic-tables.html"><i class="fa fa-angle-right"></i>Basic tables</a></li>
+                                <li><a href="data-tables.html"><i class="fa fa-angle-right"></i>Data tables</a></li>
+                            </ul>
+                        </li>
+						<li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-signal"></i>
+                                <span>Charts</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="flot.html"><i class="fa fa-angle-right"></i>Flot</a></li>
+                                <li><a href="morris.html"><i class="fa fa-angle-right"></i>Morris</a></li>
+                            </ul>
+                        </li>
+						 <li>
+                            <a href="widgets.html">
+                                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label label-success pull-right">new</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">
+                                <i class="fa fa-calendar"></i> <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-folder"></i> <span>Other Pages</span>
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="404.html"><i class="fa fa-angle-right"></i>404 Error</a></li>
+                                <li><a href="blank.html"><i class="fa fa-angle-right"></i>Blank Page</a></li>
+                                <li><a href="profile.html"><i class="fa fa-angle-right"></i>Profile</a></li>
+                                <li><a href="invoice.html"><i class="fa fa-angle-right"></i>Invoice</a></li>
+                                <li><a href="login.html"><i class="fa fa-angle-right"></i>Login</a></li>
+                                <li><a href="register.html"><i class="fa fa-angle-right"></i>Register</a></li>
+                                <li><a href="lockscreen.html"><i class="fa fa-angle-right"></i>Lockscreen</a></li>
+                                <li><a href="timeline.html"><i class="fa fa-angle-right"></i>Timeline</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+					<div class="sidebar-widget projects">
+						<div class="body">
+							<div class="title">New Projects <a href="#" class="pull-right"><i class="fa fa-plus"></i></a></div>
+							<a href="#">
+								<div class="process pull-left"><i class="fa fa-circle-o text-success"></i></div>
+								<div class="info pull-left">
+									<div class="name">Create Widgets</div>
+									<div class="status">88% ready</div>
+								</div>
+								<div class="pull-right action">
+									<i class="fa fa-refresh"></i>
+								</div>
+							</a>
+							
+							<a href="#">
+								<div class="process pull-left"><i class="fa fa-circle-o text-warning"></i></div>
+								<div class="info pull-left">
+									<div class="name">Upload Files</div>
+									<div class="status">46% ready</div>
+								</div>
+								<div class="pull-right action">
+									<i class="fa fa-refresh"></i>
+								</div>
+							</a>
+							
+							<a href="#">
+								<div class="process pull-left"><i class="fa fa-circle-o text-danger"></i></div>
+								<div class="info pull-left">
+									<div class="name">Write Posts</div>
+									<div class="status">23% ready</div>
+								</div>
+								<div class="pull-right action">
+									<i class="fa fa-refresh"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					<div class="sidebar-widget button">
+                        <button class="btn btn-labeled btn-success"><span class="btn-label"><i class="fa fa-plus"></i></span>New Project</button>
+					</div>					<div class="sidebar-widget buttons">
+                        <button class="btn btn-primary btn-md tip" title="Profile" data-toggle="tooltip"><i class="fa fa-user"></i></button>
+                        <button class="btn btn-primary btn-md tip" title="Messages" data-toggle="tooltip"><i class="fa fa-envelope"></i></button>
+                        <button class="btn btn-primary btn-md tip" title="Settings" data-toggle="tooltip"><i class="fa fa-cogs"></i></button>
+                        <button class="btn btn-primary btn-md tip" title="Sign Out" data-toggle="tooltip"><i class="fa fa-sign-out"></i></button>
+					</div>
+				 </div>
+            </div>
+			
+            <div class="rightside">
+                 <div class="page-head clearfix">
+                    <div class="pull-left">
+						<h1>Sliders</h1>
+						<ol class="breadcrumb">
+							<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+							<li>UI Elements</li>
+							<li class="active">Sliders</li>
+						</ol>
+					</div>
+					
+					<div class="btn-group pull-right">					  <button type="button" class="btn btn-white active" title="List View"><i class="fa fa-th-list"></i></button>
+					  <button type="button" class="btn btn-white" title="Grid View"><i class="fa fa-th-large"></i></button>
+					</div>
+                </div>
+
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+							<div class="box">
+                                <div class="box-title">
+                                    <h3>jQuery Knob</h3>
+                                </div>
+                                <div class="box-body clearfix" style="height: 507px">
+								       <div class="col-md-12">  
+											<h3 class="text-light">jQuery Knob</h3>
+											<p class="text-light">implemented interactions : mouse click and wheel mouse, keyboard (on focus) and fingers (touch events)</p>
+											<div class="row margin-top-lg">
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-displayInput="false" data-fgColor="#3498db" value="35">	
+												</div>
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-cursor="true" data-fgColor="#e74c3c" data-thickness=".3" value="29">
+												</div>
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-min="-100" data-fgColor="#1abc9c" data-displayPrevious="true" value="44">
+												</div>
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-angleOffset="90" data-fgColor="#1abc9c" data-linecap="round" value="35">
+												</div>
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-angleOffset="-125" data-angleArc="250" data-fgColor="#f1c40f" data-rotation="anticlockwise" value="35">
+												</div>
+												<div class="col-md-2">
+													<input class="knob" data-width="100" data-height="100" data-min="-15000" data-displayPrevious="true" data-fgColor="#1abc9c"  data-max="15000" data-step="1000" value="-11000">	
+												</div>
+											</div>
+											<p class="margin-top-lg text-center"><small class="text-light">Overloaded 'draw' method</small></p>
+											<p class="text-center">
+												<input class="knob" data-width="150" data-height="150" data-displayPrevious="true" data-fgColor="#1abc9c" data-skin="tron" data-cursor="true" value="75" data-thickness=".2">
+												<input class="knob" data-width="150" data-height="150" data-displayPrevious="true" data-fgColor="#1abc9c" data-skin="tron" data-thickness=".2" value="75">
+												<input class="knob" data-width="150" data-height="150" data-angleOffset="180" data-fgColor="#1abc9c" data-skin="tron" data-thickness=".1" value="35">
+											</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col -->
+						
+                        <div class="col-md-6 col-sm-12">
+                           <div class="box">
+                                <div class="box-title">
+                                    <h3>Range Slider</h3>
+                                </div>
+                                <div class="box-body clearfix">
+								       <div class="col-md-12">  
+											<h3 class="text-light">Ranger slider</h3>
+											<p><small class="text-light">Set diapason from 0 to 5000, Adding postfix "+" to max value, Set slider type to double, Dollar symbol as prefix, Enable grid</small></p>
+											<div id="ionrange_1"></div>
+											<p class="margin-top-sm"><small class="text-light">Set diapason from 0 to 10, Set fractional step value: 0.1, Enable grid </small></p>
+											<div id="ionrange_2"></div>
+											<p class="margin-top-sm"><small class="text-light">Set diapason from -50 to +50, Set FROM value to 0, Add degree symbol as postfix </small></p>
+											<div id="ionrange_3"></div>
+											<p class="margin-top-sm"><small class="text-light">Change common slider numbers to custom (Month names). Using values array for that. Array can be any length, Slider will change min and max number automaticaly to fit values array length, Step parameter also will be changed to one, to allow to choose items in values array </small></p>
+											<div id="ionrange_4"></div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col -->
+                    </div><!-- /. row -->
+					
+					<div class="row">
+						<div class="col-md-12">
+                           <div class="box">
+                                <div class="box-title">
+                                    <h3>Bootstrap Slider</h3>
+                                </div>
+                                <div class="box-body clearfix">
+								       <div class="col-md-6">  
+											<h3 class="text-light">Horizontal slider</h3>
+											<p class="text-light">With bootstrap slider you can variable colors like blue or red by simply changing the <code>data-slider-id="color name"</code></p>
+											<p><small class="text-light">default slider color</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+											<p><small class="text-light">data-slider-id="blue"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="12" data-slider-id="blue"/>
+											<p><small class="text-light">data-slider-id="red"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10" data-slider-id="red"/>
+											<p><small class="text-light">data-slider-id="green"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="8" data-slider-id="green"/>
+											<p><small class="text-light">data-slider-id="yellow"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="6" data-slider-id="yellow"/>
+											<p><small class="text-light">data-slider-id="aqua"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="4" data-slider-id="aqua"/>
+											<p><small class="text-light">data-slider-id="purple"</small></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="2" data-slider-id="purple"/>
+											<br />
+                                        </div>
+										
+										<div class="col-md-3">  
+											<h3 class="text-light">Vertical slider</h3>
+											<p class="text-light margin-bottom-md">With bootstrap slider you can variable orientation like vertical and horizontal by simply changing the <code>data-slider-orientation="vertical"</code></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="4"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="6" data-slider-id="blue"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="8" data-slider-id="red"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="10" data-slider-id="green"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="8" data-slider-id="yellow"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="6" data-slider-id="aqua"/>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="4" data-slider-id="purple"/>
+                                        </div>
+										
+										<div class="col-md-3">  
+											<h3 class="text-light">Shape slider</h3>
+											<p class="text-light margin-bottom-md">With bootstrap slider you can variable shapes by simply changing the <code>data-slider-handle="shape"</code></p>
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="4" data-slider-handle="square" />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="6" data-slider-id="blue" data-slider-handle="square" />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="8" data-slider-id="red" data-slider-handle="square"  />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="10" data-slider-id="green"  data-slider-handle="square" />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="8" data-slider-id="yellow" data-slider-handle="square" />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="6" data-slider-id="aqua" data-slider-handle="square" />
+											<input class="slider form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-orientation="vertical" data-slider-value="4" data-slider-id="purple" data-slider-handle="square" />
+                                        </div>
+                                </div>
+                            </div>
+						</div><!-- /.col --> 
+					</div><!-- /.row -->
+					
+					<div class="row">
+                        <div class="col-lg-6">
+                           <div class="box">
+                                <div class="box-title">
+                                    <h3>Progress Bars</h3>
+                                </div>
+                                <div class="box-body clearfix">
+								       <div class="col-md-12">  
+											<h3 class="text-light">Default Progress Bar</h3>
+											<p class="text-light margin-bottom-md">With bootstrap slider you can variable orientation like vertical and horizontal by simply changing the <code>data-slider-orientation="vertical"</code></p>
+											
+											<p class="text-light margin-bottom-md">Basic</p>
+											<div class="progress progress-sm">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+													<span class="sr-only">60% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Contextual alternatives</p>
+											
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+													<span class="sr-only">40% Complete (success)</span>
+												</div>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+													<span class="sr-only">20% Complete</span>
+												</div>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+													<span class="sr-only">60% Complete (warning)</span>
+												</div>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+													<span class="sr-only">80% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Striped</p>
+											
+											<div class="progress progress-striped progress-sm">
+												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+													<span class="sr-only">40% Complete (success)</span>
+												</div>
+											</div>
+											<div class="progress progress-striped progress-sm">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+													<span class="sr-only">20% Complete</span>
+												</div>
+											</div>
+											<div class="progress progress-striped progress-sm">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+													<span class="sr-only">60% Complete (warning)</span>
+											  </div>
+											</div>
+											<div class="progress progress-striped progress-sm">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+													<span class="sr-only">80% Complete (danger)</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Animated</p>
+											
+											<div class="progress progress-striped active progress-sm">
+												<div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+													<span class="sr-only">45% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Stacked</p>
+											
+											<div class="progress">
+												<div class="progress-bar progress-bar-success progress-sm" style="width: 35%">
+													<span class="sr-only">35% Complete (success)</span>
+												</div>
+												<div class="progress-bar progress-bar-warning progress-sm" style="width: 20%">
+													<span class="sr-only">20% Complete (warning)</span>
+												</div>
+												<div class="progress-bar progress-bar-danger progress-sm" style="width: 10%">
+													<span class="sr-only">10% Complete (danger)</span>
+												</div>
+											</div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col -->
+						
+						
+                        <div class="col-lg-6">
+                           <div class="box">
+                                <div class="box-title">
+                                    <h3>Extra Small Progress Bars</h3>
+                                </div>
+                                <div class="box-body clearfix">
+								       <div class="col-md-12">  
+											<h3 class="text-light">Extra small Progress Bar</h3>
+											<p class="text-light margin-bottom-md">With bootstrap slider you can variable orientation like vertical and horizontal by simply changing the <code>data-slider-orientation="vertical"</code></p>
+											
+											<p class="text-light margin-bottom-md">Basic</p>
+											<div class="progress progress-xs">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+													<span class="sr-only">60% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Contextual alternatives</p>
+											
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+													<span class="sr-only">40% Complete (success)</span>
+												</div>
+											</div>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+													<span class="sr-only">20% Complete</span>
+												</div>
+											</div>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+													<span class="sr-only">60% Complete (warning)</span>
+												</div>
+											</div>
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+													<span class="sr-only">80% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Striped</p>
+											
+											<div class="progress progress-striped progress-xs">
+												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+													<span class="sr-only">40% Complete (success)</span>
+												</div>
+											</div>
+											<div class="progress progress-striped progress-xs">
+												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+													<span class="sr-only">20% Complete</span>
+												</div>
+											</div>
+											<div class="progress progress-striped progress-xs">
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+													<span class="sr-only">60% Complete (warning)</span>
+											  </div>
+											</div>
+											<div class="progress progress-striped progress-xs">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+													<span class="sr-only">80% Complete (danger)</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Animated</p>
+											
+											<div class="progress progress-striped active progress-xs">
+												<div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+													<span class="sr-only">45% Complete</span>
+												</div>
+											</div>
+											
+											<p class="text-light margin-bottom-md">Stacked</p>
+											
+											<div class="progress progress-xs">
+												<div class="progress-bar progress-bar-success progress-xs" style="width: 35%">
+													<span class="sr-only">35% Complete (success)</span>
+												</div>
+												<div class="progress-bar progress-bar-warning progress-xs" style="width: 20%">
+													<span class="sr-only">20% Complete (warning)</span>
+												</div>
+												<div class="progress-bar progress-bar-danger progress-xs" style="width: 10%">
+													<span class="sr-only">10% Complete (danger)</span>
+												</div>
+											</div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div><!-- /.col -->
+                    </div><!-- /. row -->
+                </div>
+            </div>
+        </div><!-- /.wrapper -->
+		
+        <!-- Javascript -->
+        <script src="js/plugins/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="js/plugins/jquery-ui/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+		
+		<!-- Bootstrap -->
+        <script src="js/plugins/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+		
+		<!-- Interface -->
+        <script src="js/plugins/bootstrap-slider/bootstrap-slider.js" type="text/javascript"></script>
+        <script src="js/plugins/ion-rangeSlider/ion.rangeSlider.min.js" type="text/javascript"></script>
+        <script src="js/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="js/plugins/jquery-knob/jquery.knob.min.js" type="text/javascript"></script>
+        <script src="js/plugins/pace/pace.min.js" type="text/javascript"></script>
+		
+		<!-- Forms -->
+        <script src="js/custom.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				 //Knob
+				 $(".knob").knob({
+                    change : function (value) {
+                        //console.log("change : " + value);
+                    },
+                    release : function (value) {
+                        //console.log(this.$.attr('value'));
+                        console.log("release : " + value);
+                    },
+                    cancel : function () {
+                        console.log("cancel : ", this);
+                    },
+                    /*format : function (value) {
+                        return value + '%';
+                    },*/
+                    draw : function () {
+
+                        // "tron" case
+                        if(this.$.data('skin') == 'tron') {
+
+                            this.cursorExt = 0.3;
+
+                            var a = this.arc(this.cv)  // Arc
+                                , pa                   // Previous arc
+                                , r = 1;
+
+                            this.g.lineWidth = this.lineWidth;
+
+                            if (this.o.displayPrevious) {
+                                pa = this.arc(this.v);
+                                this.g.beginPath();
+                                this.g.strokeStyle = this.pColor;
+                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                                this.g.stroke();
+                            }
+
+                            this.g.beginPath();
+                            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                            this.g.stroke();
+
+                            this.g.lineWidth = 2;
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.o.fgColor;
+                            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                            this.g.stroke();
+
+                            return false;
+                        }
+                    }
+                });
+				
+				 //Bootstrap Slider
+				 $('.slider').slider();
+				
+				//RangeSlider
+				 $("#ionrange_1").ionRangeSlider({
+					type: 'double',
+					min: 0,
+					max: 5000,
+					prefix: "$",
+					maxPostfix: "+",
+					prettify: false,
+					hasGrid: true
+				});
+
+				$("#ionrange_2").ionRangeSlider({
+					type: 'single',
+					min: 0,
+					max: 10,
+					step: 0.1,
+					postfix: " carats",
+					prettify: false,
+					hasGrid: true
+				});
+
+				$("#ionrange_3").ionRangeSlider({
+					min: -50,
+					max: 50,
+					from: 0,
+					postfix: "°",
+					prettify: false,
+					hasGrid: true
+				});
+
+				$("#ionrange_4").ionRangeSlider({
+					type: 'single',
+					values: [
+						"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+					],
+					hasGrid: true
+				});
+			});
+		</script>
+    </body>
+</html>
